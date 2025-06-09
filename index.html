@@ -2,6 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <title>AMPLITUDE</title>
+  <meta property="og:url" content="https://ton-site.github.io/nom-du-projet/" />
   <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
   <style>
     body {
@@ -28,7 +29,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1rem;
+      gap: 2rem;
     }
 
     .arrow {
@@ -37,9 +38,12 @@
       user-select: none;
     }
 
-    .svg-wrapper {
-      flex: 1;
-    }
+     .svg-wrapper {
+    flex: 1;
+    transform: scale(1.1); /* augmente à 110% */
+    transform-origin: center;
+  }
+
 
     svg {
       width: 100%;
