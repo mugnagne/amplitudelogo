@@ -18,7 +18,7 @@
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 8rem;
       transition: color 0.3s ease;
     }
 
@@ -58,7 +58,7 @@
   </style>
 </head>
 <body>
-  <h1 id="title">$1</h1>
+  <h1 id="title">AMPLITUDE</h1>
   <div class="image-container">
     <div class="arrow" id="prevBtn">⟵</div>
     <div class="svg-wrapper">
@@ -153,6 +153,9 @@
 
     function updateSVG() {
       document.getElementById('title').style.color = colorInput.value;
+      document.getElementById('prevBtn').style.color = colorInput.value;
+      document.getElementById('nextBtn').style.color = colorInput.value;
+      document.body.style.color = colorInput.value;
   const color = colorInput.value;
   const svgGroup = svgContents[currentIndex].replace(/COLOR/g, color);
   const fullSVG = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'>${svgGroup}</svg>`;
